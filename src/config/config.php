@@ -1,5 +1,5 @@
 <?php
 
 return array(
-	'base_url' => 'backoffice',
+	'base_url' 	=> 'backoffice',
 );

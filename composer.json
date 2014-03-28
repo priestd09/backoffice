@@ -1,6 +1,8 @@
 {
     "name": "aamant/backoffice",
-    "description": "",
+    "description": "Backoffice for Laravel",
+    "keywords": ["Laravel", "menu", "Bootstrap"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Arnaud Amant",
@@ -9,7 +11,8 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "illuminate/support": "4.1.*"
+        "illuminate/support": "4.1.*",
+        "aamant/menu": "1.0.0"
     },
     "autoload": {
         "classmap": [

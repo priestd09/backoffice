@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="{{asset('favicon.ico')}}">
 
-    <title>{{Config::get('backoffice::site_title')}}</title>
+    <title>{{{Backoffice::title()}}}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('packages/aamant/backoffice/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -60,14 +60,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{url(Config::get('backoffice::base_url'))}}">{{Config::get('bo.site_title')}} @yield('title')</a>
+          <a class="navbar-brand" href="{{url(Config::get('backoffice::base_url'))}}">{{{Backoffice::title()}}} @yield('title')</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{url(Config::get('backoffice::base_url'))}}">Dashboard</a></li>
-            <li><a href="{{url(Config::get('backoffice::base_url') . '/settings/general')}}">Settings</a></li>
-            <li><a href="{{url(Config::get('backoffice::base_url') . '/profile')}}">Profile</a></li>
-          </ul>
+          {{Backoffice::menu()->render()}}
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Search...">
           </form>

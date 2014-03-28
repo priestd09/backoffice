@@ -4,7 +4,7 @@
 if (Schema::hasTable('settings'))
 {
 	foreach (Aamant\Backoffice\Model\Setting::get() as $option){
-		Config::set('bo.' . $option->key, $option->value);
+		Config::set('settings.' . $option->key, $option->value);
 	}
 }
 

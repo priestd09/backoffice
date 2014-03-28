@@ -21,7 +21,7 @@ class CreatesettingsTable extends Migration {
 		});
 
 		$settings = array(
-			array('key' => 'site_title', 'value' => 'Laravel Backoffice plugin', 'group' => 'general'),
+			array('key' => 'site_title', 'value' => 'Laravel', 'group' => 'general'),
 			array('key' => 'email_contact', 'value' => 'arnaud.amant@gmail.com', 'group' => 'general'),
 			array('key' => 'profil_facebook', 'value' => 'http://facebook.com', 'group' => 'reseau_sociaux'),
 			array('key' => 'profil_twitter', 'value' => 'http://twitter.com', 'group' => 'reseau_sociaux'),
