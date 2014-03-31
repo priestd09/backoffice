@@ -39,7 +39,7 @@ class BackofficeServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		$this->app->bindShared('backoffice', function() {
-			return new Backoffice(\App::make('menu'));
+			return new Backoffice(\App::make('menu', array('label' => 'Principal')));
 		});
 	}
 
